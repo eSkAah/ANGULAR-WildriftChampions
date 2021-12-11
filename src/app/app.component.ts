@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ChampionsService } from './services/champions/champions.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-wildrift';
+
+
 }

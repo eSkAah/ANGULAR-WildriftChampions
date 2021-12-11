@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChampionsViewComponent } from './champions-view.component';
+import { ChampionAddComponent } from './champion-add.component';
 
-describe('ChampionsViewComponent', () => {
-  let component: ChampionsViewComponent;
-  let fixture: ComponentFixture<ChampionsViewComponent>;
+describe('ChampionAddComponent', () => {
+  let component: ChampionAddComponent;
+  let fixture: ComponentFixture<ChampionAddComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChampionsViewComponent ]
+      declarations: [ ChampionAddComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChampionsViewComponent);
+    fixture = TestBed.createComponent(ChampionAddComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

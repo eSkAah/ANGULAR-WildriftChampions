@@ -8,12 +8,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
-import { ChampionsViewComponent } from './champions-view/champions-view.component';
-import { ChampionComponent } from './champion/champion.component';
 import { ChampionDetailsComponent } from './champion-details/champion-details.component';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore'
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { ChampionAddComponent } from './champion-add/champion-add.component';
+import { ChampionPutComponent } from './champion-put/champion-put.component';
+import { ChampionsService } from './services/champions/champions.service';
+import { ChampionComponent } from './champion/champion.component';
+import { ChampionListComponent } from './champion-list/champion-list.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +24,11 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    ChampionsViewComponent,
+    ChampionDetailsComponent,
+    ChampionAddComponent,
+    ChampionPutComponent,
     ChampionComponent,
-    ChampionDetailsComponent
+    ChampionListComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,9 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'
     AngularFirestoreModule,
 
   ],
-  providers: [],
+  providers: [
+    ChampionsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

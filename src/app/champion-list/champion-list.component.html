@@ -1,0 +1,11 @@
+<ul class="list-group" *ngIf="champs">
+  <app-champion *ngFor="let champ of champs;"
+  [image]="champ.image"
+  [name]="champ.onAir"
+  [surname]="champ.pictureLink"
+  [description]="champ.country"
+  [lane]="champ.productor"
+  [id]="champ.id"></app-champion>
+
+</ul>
+

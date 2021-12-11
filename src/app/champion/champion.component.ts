@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ChampionsService } from '../services/champions/champions.service';
 
 @Component({
   selector: 'app-champion',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChampionComponent implements OnInit {
 
-  constructor() { }
+  @Input()id?:string;
+  @Input()image?:string;
+  @Input()name?:string;
+  @Input()surname?:string;
+  @Input()description?:string;
+  @Input()lane?:string;
+  constructor(
+    private Champions: ChampionsService
+  ) { }
 
   ngOnInit(): void {
   }
 
 }
+
