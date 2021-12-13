@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ChampionListComponent } from './champion-list/champion-list.component';
 import { HomeComponent } from './home/home.component';
+import { ChampionAddComponent } from './champion-add/champion-add.component';
 
 const routes: Routes = [
   {path: '',
@@ -9,6 +10,11 @@ const routes: Routes = [
 
   {path: 'champions',
   component: ChampionListComponent},
+
+  {path: 'new',
+  component: ChampionAddComponent},
+
+
 
 
 ];

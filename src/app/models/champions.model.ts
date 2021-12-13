@@ -5,6 +5,7 @@ export class Champions {
   surname:string;
   description:string;
   lane:string;
+  tier:string;
 
 
   constructor(){
@@ -13,6 +14,7 @@ export class Champions {
     this.surname = "";
     this.description = "";
     this.lane = "";
+    this.tier = "";
 
   }
 }

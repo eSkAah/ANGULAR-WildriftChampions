@@ -8,18 +8,18 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ChampionsService {
-  private $dbPath = '/champions';
-  champions:AngularFirestoreCollection<Champions>
+  private dbPath = '/champion';
+  championsRef:AngularFirestoreCollection<Champions>
 
   constructor(
     private db: AngularFirestore
   ) {
-    this.champions = db.collection(this.$dbPath);
+    this.championsRef = db.collection(this.dbPath);
   }
 
 
   getAllChampions(): any {
-    return this.champions.snapshotChanges().pipe(
+    return this.championsRef.snapshotChanges().pipe(
       map((changes:any) => {
         return changes.map((doc:any) => {
             return ({id: doc.payload.doc.id, ...doc.payload.doc.data()})

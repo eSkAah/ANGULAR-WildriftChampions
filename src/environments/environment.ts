@@ -4,13 +4,13 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
-    apiKey: "AIzaSyCe93BMkgaJt0APqFi3YE4N8DqBAArpqJE",
-    authDomain: "wildriftchampions-c1886.firebaseapp.com",
-    projectId: "wildriftchampions-c1886",
-    storageBucket: "wildriftchampions-c1886.appspot.com",
-    messagingSenderId: "429677825308",
-    appId: "1:429677825308:web:192280f250cbb304f1bed9"
+    firebaseConfig:{
+    apiKey: "AIzaSyAeUkivU3UYGhsvogqWqzE4VGkhrQlOUfE",
+    authDomain: "wildriftchampions-81960.firebaseapp.com",
+    projectId: "wildriftchampions-81960",
+    storageBucket: "wildriftchampions-81960.appspot.com",
+    messagingSenderId: "1402568934",
+    appId: "1:1402568934:web:96087566ff4d0be111fb27"
   }
 };
 

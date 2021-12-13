@@ -4,7 +4,7 @@
 // Collapse the navbar by adding the top-nav-collapse class
 window.onscroll = function () {
 	scrollFunction();
-	scrollFunctionBTT(); // back to top button
+	// scrollFunctionBTT(); // back to top button
 };
 
 function scrollFunction() {
@@ -69,7 +69,7 @@ document.querySelector(".dropdown").addEventListener("click", (e) => {
 		_d.classList.add("show");
 	}
 });
-  
+
 
 /* Card Slider - Swiper */
 var cardSlider = new Swiper('.card-slider', {
@@ -88,27 +88,27 @@ var cardSlider = new Swiper('.card-slider', {
 /* Modal Button Close And Scroll To Link */
 const theModal = document.getElementById('staticBackdrop');
 // Needs the if otherwise it will serve error on pages without the modal like the extra pages
-if (theModal !== null) { 
+if (theModal !== null) {
 	const theModalGen = new bootstrap.Modal(theModal);
 	const theModalCtaBtn = document.getElementById('modalCtaBtn');
 	theModalCtaBtn.addEventListener('click', function () {
-		theModalGen.hide(); 
+		theModalGen.hide();
 	})
 }
 
 
-/* Back To Top Button */
-// Get the button
-myButton = document.getElementById("myBtn");
+// /* Back To Top Button */
+// // Get the button
+// myButton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-function scrollFunctionBTT() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		myButton.style.display = "block";
-	} else {
-		myButton.style.display = "none";
-	}
-}
+// // When the user scrolls down 20px from the top of the document, show the button
+// function scrollFunctionBTT() {
+// 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+// 		myButton.style.display = "block";
+// 	} else {
+// 		myButton.style.display = "none";
+// 	}
+// }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {

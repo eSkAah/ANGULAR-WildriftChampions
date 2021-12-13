@@ -1,0 +1,21 @@
+img{
+  cursor: pointer;
+  width: 100%;
+}
+
+.wf-home-champions-champion{
+  width: 120px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wf-champion-name{
+  font-family:  sans wf,sans-serif;
+  font-weight: 900;
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+  background: #17357e;
+}
+
+

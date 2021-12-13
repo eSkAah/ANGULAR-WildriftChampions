@@ -1,11 +1,19 @@
-<ul class="list-group" *ngIf="champs">
+<div class="wf-home-champions">
   <app-champion *ngFor="let champ of champs;"
   [image]="champ.image"
-  [name]="champ.onAir"
-  [surname]="champ.pictureLink"
-  [description]="champ.country"
-  [lane]="champ.productor"
-  [id]="champ.id"></app-champion>
+  [name]="champ.name"
+  [surname]="champ.surname"
+  [description]="champ.description"
+  [lane]="champ.lane"
+  [tier]="champ.tier">
+</app-champion>
+</div>
 
-</ul>
+
+
+
+
+
+
+
 
