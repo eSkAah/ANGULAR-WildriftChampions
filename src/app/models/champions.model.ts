@@ -1,11 +1,12 @@
 export class Champions {
   id?: string;
-  image:string;
-  name:string;
-  surname:string;
-  description:string;
-  lane:string;
-  tier:string;
+  image: string;
+  name: string;
+  surname: string;
+  description: string;
+  lane: string;
+  tier: string;
+
 
 
   constructor(){

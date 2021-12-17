@@ -17,6 +17,7 @@ import { ChampionPutComponent } from './champion-put/champion-put.component';
 import { ChampionsService } from './services/champions/champions.service';
 import { ChampionComponent } from './champion/champion.component';
 import { ChampionListComponent } from './champion-list/champion-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ChampionListComponent } from './champion-list/champion-list.component';
     ChampionPutComponent,
     ChampionComponent,
     ChampionListComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,7 @@ import { ChampionListComponent } from './champion-list/champion-list.component';
     NgxBootstrapIconsModule.pick(allIcons),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
+    FormsModule
 
   ],
   providers: [

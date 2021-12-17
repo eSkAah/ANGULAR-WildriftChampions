@@ -1,6 +1,6 @@
 .form-add-champion{
 background-color: #2B2B4F;
-opacity: 0.94;
+opacity: 0.95;
 }
 
 
@@ -11,4 +11,12 @@ h1{
   color: rgb(230, 230, 230);
   font-size: 50px;
   font-style: italic;
+}
+
+
+label {
+  color: rgb(230, 230, 230);
+  font-weight: 900;
+  font-family:  sans wf,sans-serif;
+
 }

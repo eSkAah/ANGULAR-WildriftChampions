@@ -15,8 +15,10 @@ export class ChampionListComponent implements OnInit {
   ngOnInit(): void {
     this.Champions.getAllChampions().subscribe((data: any) => {
       this.champs = data;
-      console.log(data);
+
     });
   }
+
+
 
 }

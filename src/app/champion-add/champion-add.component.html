@@ -4,18 +4,90 @@
         <h1 class="form-add-champion-title">Un champion entre dans la faille</h1>
 
         <form class="form-1 ">
-          <div class="form-group">
-              <input type="text" class="form-control-input" placeholder="Name" required>
+
+          <!-- LIGNE 1 DU FORMULAIRE  -->
+          <div class="row">
+
+            <div class="col-sm-6 col-12">
+              <div class="form-group">
+                <label>Nom :</label>
+                <input type="text" class="form-control-input" name="name" placeholder="Nom du personnage" [(ngModel)]="champs.name" >
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-12">
+              <div class="form-group">
+                <label>Surnom :</label>
+                <input type="text" class="form-control-input" name="surname" placeholder="Surnom du personnage"  [(ngModel)]="champs.surname">
+              </div>
+            </div>
+
           </div>
-          <div class="form-group">
-              <input type="email" class="form-control-input" placeholder="Email" required>
+
+          <!-- LIGNE 2 DU FORMULAIRE  -->
+          <div class="row">
+
+            <div class="col-sm-6 col-12">
+              <div class="form-group">
+                <label>Lane :</label>
+                <input type="text" class="form-control-input" name="lane" placeholder="Lane principale" [(ngModel)]="champs.lane" >
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-12">
+              <div class="form-group">
+                <label>Tier list :</label>
+                <input type="text" class="form-control-input" name="tier" placeholder="Place dans la tier list" [(ngModel)]="champs.tier" >
+              </div>
+            </div>
+
           </div>
-          <div class="form-group">
-              <textarea class="form-control-textarea" placeholder="Message" required></textarea>
+
+          <!-- LIGNE 3 DU FORMULAIRE  -->
+          <div class="row">
+
+            <div class="col-12">
+              <div class="form-group">
+                <label>Cadre du personnage :</label>
+                <input type="text" class="form-control-input" name="image" placeholder="URL photo de profile du personnage" [(ngModel)]="champs.image" >
+              </div>
+            </div>
+
           </div>
-          <div class="form-group">
-              <button type="submit" class="form-control-submit-button">Submit</button>
+
+          <!-- LIGNE 4 DU FORMULAIRE  -->
+          <!-- <div class="row">
+
+            <div class="col-12">
+              <div class="form-group">
+                <label>Image du personnage :</label>
+                <input type="text" class="form-control-input" placeholder="URL vers l'image du personnage" >
+              </div>
+            </div>
+
+          </div> -->
+
+          <!-- LIGNE 5 DU FORMULAIRE  -->
+          <div class="row">
+
+            <div class="col-12">
+              <div class="form-group">
+                <label>Description :</label>
+                <textarea class="form-control-input" name="story" rows="5" placeholder="Description du personnage" [(ngModel)]="champs.description" ></textarea>
+              </div>
+            </div>
+
           </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="submit">
+                <button class="btn btn-lg btn-success" (click)="addChamp()">Envoyer</button>
+              </div>
+            </div>
+          </div>
+
+
         </form>
 
       </div>

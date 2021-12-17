@@ -488,6 +488,7 @@ a:hover {
 	background: url('../images/add-background.jpg') center center no-repeat;
 	background-size: cover;
 	text-align: center;
+  height: 100vh;
 }
 
 .header .h1-large {
@@ -979,7 +980,7 @@ a:hover {
 }
 
 .form-1 .form-container {
-  background-color: #020329;
+  background-color: #2B2B4F;
 }
 
 .form-1 .h2-heading {

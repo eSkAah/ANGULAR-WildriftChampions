@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Champions } from 'src/app/models/champions.model';
 import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -26,6 +27,14 @@ export class ChampionsService {
         })
       })
     );
+  }
+
+  addChampion(champions: Champions): any {
+    return new Observable(obs => {
+      this.championsRef.add({...champions}).then(() => {
+        obs.next();
+      })
+    })
   }
 
 

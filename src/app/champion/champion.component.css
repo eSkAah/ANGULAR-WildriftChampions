@@ -18,4 +18,10 @@ img{
   background: #17357e;
 }
 
+.wf-home-champions-champion img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
 
