@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ChampionsService } from '../services/champions/champions.service';
+
 
 @Component({
   selector: 'app-champion-details',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChampionDetailsComponent implements OnInit {
 
-  constructor() { }
+  champ!: any;
+
+  constructor(
+    private Champions: ChampionsService,
+    private route : ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    const champId = this.route.snapshot.params['id'];
+
+    this.champ = this.Champions.getChampionById(champId).subscribe((data: any) => {
+    this.champ = data;
+
+    });
+
+
   }
 
 }

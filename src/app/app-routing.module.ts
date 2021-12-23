@@ -9,13 +9,11 @@ const routes: Routes = [
   {path: '',
   component: HomeComponent},
 
-  {path: 'champions',
+  {path: 'champions/:id',
   component: ChampionDetailsComponent},
 
   {path: 'new',
   component: ChampionAddComponent},
-
-
 
 
 ];

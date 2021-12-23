@@ -7,15 +7,16 @@ import { ChampionsService } from '../services/champions/champions.service';
   styleUrls: ['./champion-list.component.css']
 })
 export class ChampionListComponent implements OnInit {
+
   champs!:any;
+
   constructor(
     private Champions:ChampionsService
   ) { }
 
   ngOnInit(): void {
     this.Champions.getAllChampions().subscribe((data: any) => {
-      this.champs = data;
-
+    this.champs = data;
     });
   }
 

@@ -1,0 +1,118 @@
+h1{
+  font-family: sans wf,sans-serif;
+  font-weight: 900;
+  color: #fff;
+}
+
+h2, h4  {
+  font-family: sans wf,sans-serif;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+}
+
+.title {
+  font-family: sans wf,sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+.description {
+  color: white;
+  font-style: italic;
+}
+
+.divider{
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right,#7a6ae7,#432ea7);
+  margin: 10px 0;
+}
+
+.divider-half{
+  box-sizing: border-box;
+  display: block;
+  width: 50%;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right,#7a6ae7,#432ea7);
+  margin: 10px 0;
+}
+
+.divider-third{
+  box-sizing: border-box;
+  display: block;
+  width: 33%;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right,#7a6ae7,#432ea7);
+  margin: 10px 0;
+}
+
+.wr-champion-details-box{
+  background-color: #4690cdd7;
+
+}
+
+.data {
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: open sans wf,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 4px 12px;
+  background: #7b6ce7;
+  border-radius: 15px;
+  min-width: 50px;
+}
+
+
+
+.tier {
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: open sans wf,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 15px;
+  min-width: 50px;
+  background: #f36c6c;
+}
+
+.additional-info{
+  box-sizing: border-box;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.additional-info div {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+

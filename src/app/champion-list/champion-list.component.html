@@ -1,6 +1,8 @@
 <div class="wf-home-champions">
   <app-champion *ngFor="let champ of champs;"
+  [id]="champ.id"
   [image]="champ.image"
+  [imgProfile]="champ.imgProfile"
   [name]="champ.name"
   [surname]="champ.surname"
   [description]="champ.description"

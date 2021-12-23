@@ -1,9 +1,66 @@
-<div class="page">
+<div class="page-champions-details">
   <div class="container">
     <div class="row">
-      <div>
-        PAGE CHAMPION'S DETAILS WORK
+
+      <div class="wr-champion-details-box col-12 p-4 rounded ">
+        <h1 class="mb-4">Détails du champion</h1>
+
+      <div class="col-12 d-flex">
+
+        <!-- LEFT BOX -->
+        <div class="col-7 px-5">
+
+          <!-- MAIN INFO -->
+          <div class="divider"></div>
+          <h2>{{champ.name}}</h2>
+          <h4>{{champ.surname}}</h4>
+          <div class="divider-half"></div>
+
+          <!-- DESCRIPTION -->
+          <div class="description">
+            {{champ.description}}
+          </div>
+
+          <div class="divider-third"></div>
+
+          <!-- ADDITIONNAL INFOS -->
+          <div class="additional-info">
+            <div>
+              <span class="title">Recommended Role</span>
+              <span class="data">{{champ.lane}}</span>
+            </div>
+            <div>
+                <span class="title">Tier</span>
+                <span class="tier">{{champ.tier}}</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT BOX -->
+        <div class="col-5 rounded">
+          <img class="img-fluid rounded" src="{{champ.imgProfile}}" alt="">
+        </div>
+
+
+      </div>
       </div>
     </div>
   </div>
+
+  <div class="btn" routerLinkActive="active">
+    <a routerLink="new" ><i class="fas fa-plus fa-2x" ></i></a>
+  </div>
+
 </div>
+
+
+
+
+
+
+
+
+
+
+

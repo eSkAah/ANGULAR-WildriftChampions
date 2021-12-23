@@ -15,6 +15,7 @@ export class ChampionComponent implements OnInit {
   @Input()description?:string;
   @Input()lane?:string;
   @Input()tier?:string;
+  @Input()imgProfile?:string;
 
   constructor(
     private Champions: ChampionsService

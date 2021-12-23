@@ -37,5 +37,13 @@ export class ChampionsService {
     })
   }
 
+  getChampionById(id: any): any {
+    return new Observable(obs => {
+      this.championsRef.doc(id).get().subscribe(res => {
+        obs.next({id: res.id, ...res.data()});
+      });
+    });
+  }
+
 
 }
