@@ -1,6 +1,7 @@
 export class Champions {
   id?: string;
   image: string;
+  imgProfile: string;
   name: string;
   surname: string;
   description: string;
@@ -16,6 +17,7 @@ export class Champions {
     this.description = "";
     this.lane = "";
     this.tier = "";
+    this.imgProfile="";
 
   }
 }
