@@ -18,6 +18,7 @@ import { ChampionsService } from './services/champions/champions.service';
 import { ChampionComponent } from './champion/champion.component';
 import { ChampionListComponent } from './champion-list/champion-list.component';
 import { FormsModule } from '@angular/forms';
+import { ChampionDeleteComponent } from './champion-delete/champion-delete.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     ChampionPutComponent,
     ChampionComponent,
     ChampionListComponent,
+    ChampionDeleteComponent,
 
   ],
   imports: [

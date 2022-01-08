@@ -115,4 +115,46 @@ h2, h4  {
 
 
 
+/* Positionnement du bouton Mettre à jour */
+.btn-update {
+  position: fixed;
+  bottom: 25px;
+  right: 100px;
+  display:block;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1px solid rgb(69, 112, 231);
+  background-color: rgb(98, 126, 202);
+  width: 65px;
+  height: 65px;
+}
+
+.fa-edit {
+  color: rgb(238, 238, 238);
+  margin-top: 20%;
+  margin-left: 13%
+}
+
+/* Positionnement du bouton Delete*/
+
+.btn-delete {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display:block;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1px solid rgb(221, 91, 91);
+  background-color: rgb(204, 83, 83);
+  width: 65px;
+  height: 65px;
+}
+
+.fa-trash-alt{
+  color: rgb(238, 238, 238);
+  margin-top: 20%;
+}
+
 

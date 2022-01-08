@@ -5,10 +5,12 @@
       <div class="wr-champion-details-box col-12 p-4 rounded ">
         <h1 class="mb-4">Détails du champion</h1>
 
+
       <div class="col-12 d-flex">
 
         <!-- LEFT BOX -->
         <div class="col-7 px-5">
+
 
           <!-- MAIN INFO -->
           <div class="divider"></div>
@@ -17,7 +19,7 @@
           <div class="divider-half"></div>
 
           <!-- DESCRIPTION -->
-          <div class="description">
+          <div class="description nowrap">
             {{champ.description}}
           </div>
 
@@ -48,8 +50,12 @@
     </div>
   </div>
 
-  <div class="btn" routerLinkActive="active">
-    <a routerLink="new" ><i class="fas fa-plus fa-2x" ></i></a>
+  <div class="btn btn-update" routerLinkActive="active">
+    <a routerLink="/update/{{champ.id}}" ><i class="far fa-edit fa-2x" ></i></a>
+  </div>
+
+  <div class="btn btn-delete" routerLinkActive="active">
+    <a (click)="deleteChamp()" routerLink=""><i class="far fa-trash-alt fa-2x" ></i></a>
   </div>
 
 </div>

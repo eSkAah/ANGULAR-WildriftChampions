@@ -1,1 +1,116 @@
-<p>champion-put works!</p>
+<div  class="page">
+  <div class="container form-put-champion rounded">
+      <div class="row">
+        <h1 class="fw-bold form-add-champion-title mt-2 p-3 text-white">Un champion entre dans la faille</h1>
+
+
+
+        <div class="row" *ngIf="change">
+          <div class="change rounded col-6 offset-3">
+            Les informations de {{champ.name}} ont été modifiées
+          </div>
+        </div>
+
+        <form class="form-1 ">
+
+          <!-- LIGNE 1 DU FORMULAIRE  -->
+          <div class="row">
+
+            <div class="col-sm-6 col-12">
+              <div class="form-group">
+                <label>Nom :</label>
+                <input type="text" class="form-control-input" name="name" placeholder="Nom du personnage" [(ngModel)]="champ.name" >
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-12">
+              <div class="form-group">
+                <label>Surnom :</label>
+                <input type="text" class="form-control-input" name="surname" placeholder="Surnom du personnage"  [(ngModel)]="champ.surname">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- LIGNE 2 DU FORMULAIRE  -->
+          <div class="row">
+
+            <div class="col-sm-6 col-12">
+              <div class="form-group">
+                <label>Lane :</label>
+                <input type="text" class="form-control-input" name="lane" placeholder="Lane principale" [(ngModel)]="champ.lane" >
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-12">
+              <div class="form-group">
+                <label>Tier list :</label>
+                <input type="text" class="form-control-input" name="tier" placeholder="Place dans la tier list" [(ngModel)]="champ.tier" >
+              </div>
+            </div>
+
+          </div>
+
+          <!-- LIGNE 3 DU FORMULAIRE  -->
+          <div class="row">
+
+            <div class="col-12">
+              <div class="form-group">
+                <label>Cadre du personnage :</label>
+                <input type="text" class="form-control-input" name="image" placeholder="URL photo de profile du personnage" [(ngModel)]="champ.image" >
+              </div>
+            </div>
+
+          </div>
+
+          <!-- LIGNE 4 DU FORMULAIRE  -->
+          <div class="row">
+
+            <div class="col-12">
+              <div class="form-group">
+                <label>Image de profil personnage :</label>
+                <input type="text" class="form-control-input" name="imgProfile" placeholder="URL vers l'image du personnage" [(ngModel)]="champ.imgProfile"  >
+              </div>
+            </div>
+
+          </div>
+
+          <!-- LIGNE 5 DU FORMULAIRE  -->
+          <div class="row">
+
+            <div class="col-12">
+              <div class="form-group">
+                <label>Description :</label>
+                <textarea class="form-control-input" name="story" rows="5" placeholder="Description du personnage" [(ngModel)]="champ.description" ></textarea>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row ">
+
+            <div class="col-sm-6 col-12 d-flex justify-content-end">
+              <div class="submit">
+                <button class="btn btn-lg btn-success" (click)="updateInfos()">Mettre à jour</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-12 d-flex justify-content-start">
+              <div routerLinkActive="active">
+                <a routerLink="/champions/{{champ.id}}" class="btn btn-lg btn-info">Précédent</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+        </form>
+
+      </div>
+  </div>
+</div>
+

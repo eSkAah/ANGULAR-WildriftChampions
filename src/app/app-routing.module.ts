@@ -4,6 +4,7 @@ import { ChampionListComponent } from './champion-list/champion-list.component';
 import { HomeComponent } from './home/home.component';
 import { ChampionAddComponent } from './champion-add/champion-add.component';
 import { ChampionDetailsComponent } from './champion-details/champion-details.component';
+import { ChampionPutComponent } from './champion-put/champion-put.component';
 
 const routes: Routes = [
   {path: '',
@@ -14,6 +15,12 @@ const routes: Routes = [
 
   {path: 'new',
   component: ChampionAddComponent},
+
+  {path: 'delete/:id',
+  component: ChampionAddComponent},
+
+  {path: 'update/:id',
+  component: ChampionPutComponent},
 
 
 ];

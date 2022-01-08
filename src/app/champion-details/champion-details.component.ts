@@ -11,6 +11,8 @@ import { ChampionsService } from '../services/champions/champions.service';
 export class ChampionDetailsComponent implements OnInit {
 
   champ!: any;
+  id!: any;
+  change: boolean = false;
 
   constructor(
     private Champions: ChampionsService,
@@ -22,9 +24,20 @@ export class ChampionDetailsComponent implements OnInit {
 
     this.champ = this.Champions.getChampionById(champId).subscribe((data: any) => {
     this.champ = data;
+    this.id = data.id;
 
     });
 
+
+  }
+
+  deleteChamp(){
+    console.log('deletechampTS');
+    this.change = true;
+      setTimeout( () => {
+        this.change = false;
+      }, 3000)
+    this.Champions.deleteChampion(this.id)
 
   }
 

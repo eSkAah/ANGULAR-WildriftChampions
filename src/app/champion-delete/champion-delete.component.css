@@ -1,0 +1,11 @@
+.change{
+  font-family:  sans wf,sans-serif;
+  font-weight: 900;
+  color: rgb(230, 230, 230);
+  font-style: italic;
+  border: solid 2px rgb(184, 61, 61) ;
+  padding: 5px;
+  background-color: rgb(131, 0, 0);
+}
+
+

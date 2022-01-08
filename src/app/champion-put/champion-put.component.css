@@ -1,0 +1,33 @@
+.form-put-champion{
+  background-color: #2B2B4F;
+  opacity: 0.95;
+
+  /* margin-top: 200px; */
+  }
+
+
+  h1{
+    font-family:  sans wf,sans-serif;
+    font-weight: 900;
+    color: rgb(230, 230, 230);
+    font-size: 50px;
+    font-style: italic;
+  }
+
+  .change{
+    font-family:  sans wf,sans-serif;
+    font-weight: 900;
+    color: rgb(230, 230, 230);
+    font-style: italic;
+    border: solid 2px rgb(106, 184, 61) ;
+    padding: 5px;
+    background-color: green;
+  }
+
+
+  label {
+    color: rgb(230, 230, 230);
+    font-weight: 900;
+    font-family:  sans wf,sans-serif;
+
+  }
