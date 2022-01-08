@@ -11,6 +11,7 @@ import { ChampionsService } from '../services/champions/champions.service';
 export class ChampionAddComponent implements OnInit {
 
   public champs!:Champions;
+  change: boolean = false;
 
   constructor(
     private Champions:ChampionsService,
@@ -23,12 +24,15 @@ export class ChampionAddComponent implements OnInit {
   }
 
   addChamp(){
-    this.Champions.addChampion(this.champs).subscribe(() => {
-      this.champs = new Champions();
-      this.router.navigate(['new']);
+    this.change = true;
 
+    setTimeout( () => {
+      this.Champions.addChampion(this.champs).subscribe(() => {
+        this.champs = new Champions();
+        this.change = false;
+        this.router.navigate(['']);
+      })
+    }, 4000)
 
-    })
   }
-
 }

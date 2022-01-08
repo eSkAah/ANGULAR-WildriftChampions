@@ -3,6 +3,13 @@
       <div class="row">
         <h1 class="form-add-champion-title mt-2 p-3 ">Un champion entre dans la faille</h1>
 
+        <div class="row" *ngIf="change">
+          <div class="change rounded col-6 offset-3">
+            Champion ajouté avec succès
+          </div>
+        </div>
+
+
         <form class="form-1 ">
 
           <!-- LIGNE 1 DU FORMULAIRE  -->
@@ -81,8 +88,8 @@
 
           <div class="row">
             <div class="col-12">
-              <div class="submit">
-                <button class="btn btn-lg btn-success" (click)="addChamp()">Envoyer</button>
+              <div class="">
+                <button  class="btn btn-lg btn-success" (click)="addChamp()">Envoyer</button>
               </div>
             </div>
           </div>
